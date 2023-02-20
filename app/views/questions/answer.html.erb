@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row height d-flex justify-content-center align-items-center">
+    <div class="col-md-8">
+    <h1>Stupid coaching</h1>
+      <figure class="note note-secondary p-4"
+      style="border-left: .35rem solid #dddddd">
+          <blockquote class="blockquote">
+            <p class="pb-2">
+              <%= @question %>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0">
+            <i>You</i>
+          </figcaption>
+        </figure>
+
+        <figure class="note note-warning p-4"
+        style="border-left: .35rem solid #dddddd; background-color: lightyellow">
+          <blockquote class="blockquote">
+            <p class="pb-2">
+             <b> <%=  @answer%> </b>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0">
+            <i>Your coach</i>
+          </figcaption>
+        </figure>
+
+        <%= link_to "Ask an new question", "/ask", class: "link" %>
+      </div>
+  </div>
+</div>
